@@ -48,3 +48,23 @@ class App extends Component {
 }
 
 export default App
+
+import React from 'react';
+import './App.css';
+import Plot from './Plot';
+
+function App() {
+  const plotData = {
+    title: 'My NFT Plot',
+    story: 'Once upon a time in a plot far, far away...'
+  };
+  const isOwner = true; // Set this value based on the user's ownership status of the plot
+
+  return (
+    <div className="App">
+      <Plot plotData={plotData} isOwner={isOwner} />
+    </div>
+  );
+}
+
+export default App;
